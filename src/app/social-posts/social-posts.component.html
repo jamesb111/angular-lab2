@@ -1,0 +1,15 @@
+
+<section>
+<h1>My Thoughts</h1>
+<div class="postbtn">
+<button class="btn" (click)="toggleDisplay()">New Post</button>
+</div>
+
+<div class="hiddenForm">
+<post-form class ="hiddenForm" *ngIf="shouldBeHidden" (onSubmitted)="onSubmit($event)"></post-form>
+</div>
+
+<div class="textstuff">
+<li *ngFor = "let msg of posts; index as i"> <p>{{msg.subject}}</p>{{msg.bodytext}} <span (click)="removePost(i)">X</span></li>
+</div>
+</section>

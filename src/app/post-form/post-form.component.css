@@ -1,0 +1,35 @@
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #B1DDEA;
+    height: 300px;
+    width: 100%;
+    align-items: center;
+    border: 1px solid black;
+}
+
+label {
+    font-size: 24px;
+    margin-right: 75%;
+    
+}
+.secondinput {
+    height: 150px;
+    width: 90%;
+    padding: 5px;
+}
+
+.firstinput {
+    height: 20px;
+    width: 90%;
+    padding: 5px;
+}
+
+button {
+    height: 20px;
+    width: 90%;
+    background-color: white;
+    padding: 5px;
+}
+
